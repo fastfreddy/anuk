@@ -58,11 +58,7 @@ WSGI_APPLICATION = 'anuk.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd8fig4vujcqd2',
-        'USER': 'xckwtkfcxeghsp',
-        'PASSWORD': 'VeXvSZCz1Uijc42FsnBY56_djz',
-        'HOST': 'ec2-54-225-101-164.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'NAME': os.path.join(BASE_DIR, 'db.postgresql_psycopg2'),
     }
 }
 
